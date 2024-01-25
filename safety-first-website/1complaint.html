@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <style>
     .btn-sm {
@@ -13,30 +14,37 @@
       background-image: url('https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80');
     }
   </style>
-  <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  </head>
-  <body>
-    <div class="row">
-      <div class="col">
-        <input type="text" class="form-control" placeholder="Complaint_ID" aria-label="First name">
-      </div>
-      <div class="col">
-        <input type="text" class="form-control" placeholder="Complaint" aria-label="Last name">
-      </div>
-      <div class="col">
-        <input type="text" class="form-control" placeholder="status" aria-label="Last name">
-      </div>
-      <div class="col">
-        <input type="text" class="form-control" placeholder="Officer_ID" aria-label="Last name">
-      </div>
-      <div class="col">
-        <input type="text" class="form-control" placeholder="Location_ID" aria-label="Last name">
-      </div>
-      <!--submit button-->
-      <button type="button" class="btn-sm" onclick="getRole()">Submit</button>
-      
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-  </body>
-  </html>
+  
+
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+       <!--we will have some content here later-->
+    </head>
+    <body>
+        <form class= "row p-3" action="1complaint.php" method="post">
+            <!--New input field-->
+            <div class="col">
+              <input type="text" class="form-control" placeholder="complaint_id" name = "complaint_id" aria-label="complaint_id">
+            </div>
+            <!--New input field-->
+            <div class="col">
+                <input type="text" class="form-control" placeholder="complaint" name = "complaint" aria-label="complaint">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="status" name = "status" aria-label="status">
+              </div>
+              <!--New input field-->
+            <div class="col">
+                <input type="text" class="form-control" placeholder="officer_id" name = "officer_id" aria-label="officer_id">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="location_id" name = "location_id" aria-label="location_id">
+              </div>
+              
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">insert</button>
+            </div>
+          </form>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    </body>
+</html>

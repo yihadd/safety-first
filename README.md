@@ -1,2 +1,2 @@
 # safety-first
-this repository contains code and documentation for safety in university
+this repository contains code and documentation for safety-fist application(draf) in university
